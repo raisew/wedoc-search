@@ -5,15 +5,16 @@ Uses [flexsearch](https://github.com/nextapps-de/flexsearch).
 ## Installing
 
 ```js
-npm i vitepress-plugin-search flexsearch -D
+npm i wedoc-search flexsearch -D
 ```
 
 ## Add the plugin
 
 - Using an vite.config file
+
 ```js
 //vite.config.ts
-import { SearchPlugin } from "vitepress-plugin-search";
+import { SearchPlugin } from "wedoc-search";
 import { defineConfig } from "vite";
 
 //default options
@@ -32,11 +33,12 @@ export default defineConfig({
 ```
 
 - Using config.js or config.ts
+
 ```js
-import { SearchPlugin } from "vitepress-plugin-search";
+import { SearchPlugin } from "wedoc-search";
 import { defineConfig } from "vitepress";
 export default defineConfig({
-  vite: { plugins: [SearchPlugin(options)] }
+  vite: { plugins: [SearchPlugin(options)] },
 });
 ```
 
@@ -46,6 +48,6 @@ Accept [FlexSearch Index Options](https://github.com/nextapps-de/flexsearch#opti
 
 ## Multi language support
 
-Provided by flexsearch  
-  
-See [chinese settings for example](https://github.com/emersonbottero/vitepress-plugin-search/issues/11)
+Provided by flexsearch
+
+See [chinese settings for example](https://github.com/emersonbottero/wedoc-search/issues/11)
